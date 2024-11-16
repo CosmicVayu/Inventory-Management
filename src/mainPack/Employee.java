@@ -312,6 +312,7 @@ public class Employee {
 		
 		table = new JTable();
 		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+		table.setBackground(new Color(179, 225, 213));
 		scrollPane.setViewportView(table);
 		
 		JLabel lblNewLabel_1 = new JLabel("EmpId");

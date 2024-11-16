@@ -143,6 +143,7 @@ public class Sales {
 		panel_1.add(scrollPane);
 		
 		table = new JTable();
+		table.setBackground(new Color(179, 225, 213));
 		scrollPane.setViewportView(table);
 		
 		JPanel panel_1_1 = new JPanel();
@@ -158,6 +159,7 @@ public class Sales {
 		panel_1_1.add(scrollPane_1);
 		
 		table_1 = new JTable();
+		table_1.setBackground(new Color(179, 225, 213));
 		scrollPane_1.setViewportView(table_1);
 		
 		JLabel lblNewLabel_1 = new JLabel("Sold Product");
@@ -203,7 +205,7 @@ public class Sales {
 			        	netSold = rst.getDouble("net_sold");
 			        	area1.setText(""); 
 			            area1.setText(area1.getText()+"----------------------------------------------\n");
-			            area1.setText(area1.getText()+"                	   Total Order Amount               \n");
+			            area1.setText(area1.getText()+"                	   Total Sold Amount               \n");
 			            area1.setText(area1.getText()+"----------------------------------------------\n");
 			            area1.setText(area1.getText()+"Total Sold Amount: Rs" + netSold);
 			            
@@ -245,7 +247,7 @@ public class Sales {
 			        	netOrder = rst.getDouble("net_sold");
 			        	area1.setText(""); 
 			            area1.setText(area1.getText()+"----------------------------------------------\n");
-			            area1.setText(area1.getText()+"                	   Total Sold Amount               \n");
+			            area1.setText(area1.getText()+"                	   Total Bought Amount               \n");
 			            area1.setText(area1.getText()+"----------------------------------------------\n");
 			            area1.setText(area1.getText()+"Total Bought Amount: Rs" + netOrder);
 			            

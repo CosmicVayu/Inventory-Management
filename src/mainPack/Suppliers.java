@@ -128,6 +128,7 @@ public class Suppliers {
 		panel_1.add(scrollPane);
 		
 		table = new JTable();
+		table.setBackground(new Color(179, 225, 213));
 		scrollPane.setViewportView(table);
 		
 		JLabel lblNewLabel_1 = new JLabel("SuppId");
@@ -367,11 +368,11 @@ public class Suppliers {
 				
 				String id=txtSuppId.getText().trim();
 				try {
-					prestm = con.prepareStatement("delete from Supplier where EmpId=? ");
+					prestm = con.prepareStatement("delete from Supplier where SuppId=? ");
 					prestm.setString(1, id);
 					prestm.executeUpdate();
 					
-					JOptionPane.showMessageDialog(null,"Item Deleted Successfully");
+					JOptionPane.showMessageDialog(null,"Supplier Deleted Successfully");
 
 					loadTable3();
 					

@@ -89,7 +89,6 @@ public class DesignMain {
 	public void loadTable()
 	{
 		try {
-			
 			prestm = con.prepareStatement("select *from Product_Table ");
 			rst = prestm.executeQuery();
 			table_1.setModel(DbUtils.resultSetToTableModel(rst));
@@ -562,6 +561,7 @@ public class DesignMain {
 	          
 				
 				Integer diffOfQuantity = Integer.parseInt(quantity)-Integer.parseInt(sellQuantity);
+				
 				
 				try {
 					

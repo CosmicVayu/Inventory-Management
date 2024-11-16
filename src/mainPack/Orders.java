@@ -124,6 +124,7 @@ public class Orders {
 		panel_1.add(scrollPane);
 		
 		table = new JTable();
+		table.setBackground(new Color(179, 225, 213));
 		scrollPane.setViewportView(table);
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
